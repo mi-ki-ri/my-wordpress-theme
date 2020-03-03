@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/vs.min.css">
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
     <link rel="stylesheet" href="<?php echo bloginfo('url') ?>/wp-content/themes/my-wordpress-theme/style.css" />
     <?php wp_head(); ?>
 

@@ -1,0 +1,18 @@
+.myHeader {
+  background-color: #24292e;
+}
+.mySectionHead {
+  border-bottom: 3px solid #24292e;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.myArticle {
+  border-bottom: 1px solid #24292e;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}

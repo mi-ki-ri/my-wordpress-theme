@@ -57,6 +57,9 @@
                             <?php the_content(); ?>
                           </code>
                         </pre>
+                        <p class="text-right">
+                          <?php the_date(); ?>
+                        </p>
                     </article>
                 </div>
             <?php endwhile; ?>

@@ -60,6 +60,8 @@
                         <p class="text-right">
                           <?php the_date(); ?>
                         </p>
+                        <?php comments_template(); ?>
+
                     </article>
                 </div>
             <?php endwhile; ?>

@@ -96,7 +96,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-          document.querySelectorAll('myBody').forEach((block) => {
+          document.querySelectorAll('.myBody').forEach((block) => {
             hljs.highlightBlock(block);
           });
         });

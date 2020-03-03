@@ -43,7 +43,11 @@
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="row">
                     <article class="col myArticle">
-                        <h3><?php the_title(); ?></h3>
+                        <h3>
+                          <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                          </a>
+                        </h3>
                         <pre class="body myBody Markdown">
                           <code class="Markdown">
                             <?php the_content(); ?>

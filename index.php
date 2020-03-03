@@ -35,7 +35,7 @@
       <main class="container">
         <div class="row">
             <h2 class="col mySectionHead">
-              <?php wp_title ( '-', true,'right' ); ?>
+              <?php wp_title ( '-', true,'right' ); ?><?php bloginfo('name'); ?>
             </h2>
         </div>
 

@@ -44,7 +44,7 @@
                 <div class="row">
                     <article class="col myArticle">
                         <h3><?php the_title(); ?></h3>
-                        <pre class="body myBody">
+                        <pre class="body myBody Markdown">
                           <code class="Markdown">
                             <?php the_content(); ?>
                           </code>

@@ -23,7 +23,11 @@
       <header class="myHeader text-white container-fluid m-0 p-0">
         <div class="row">
           <div class="col">
-            <h1>By Mikiri</h1>
+            <h1>
+              <a class="text-white" href="<?php echo bloginfo("url"); ?>">
+                By Mikiri
+              </a>
+            </h1>
           </div>
           <div class="col text-right text-white">
             <p>

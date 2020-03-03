@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css">
     <link rel="stylesheet" href="<?php echo bloginfo('url') ?>/wp-content/themes/my-wordpress-theme/style.css" />
     <?php wp_head(); ?>
 
@@ -45,7 +45,9 @@
                     <article class="col myArticle">
                         <h3><?php the_title(); ?></h3>
                         <pre class="body myBody">
-                             <?php the_content(); ?>
+                          <code class="Markdown">
+                            <?php the_content(); ?>
+                          </code>
                         </pre>
                     </article>
                 </div>

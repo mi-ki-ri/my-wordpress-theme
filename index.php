@@ -44,9 +44,9 @@
                 <div class="row">
                     <article class="col myArticle">
                         <h3><?php the_title(); ?></h3>
-                        <div class="body myBody">
+                        <pre class="body myBody">
                              <?php the_content(); ?>
-                        </div>
+                        </pre>
                     </article>
                 </div>
             <?php endwhile; ?>

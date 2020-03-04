@@ -10,7 +10,9 @@
   border-bottom: 1px solid #24292e;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  line-height: 1;
+}
+.myArticle p{
+  margin-bottom: 0;
 }
 img{
   width: auto;

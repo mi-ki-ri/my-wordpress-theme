@@ -143,8 +143,11 @@ s.setAttribute('data-timestamp', +new Date());
             let txt = block.textContent
             console.log("txt",txt)
             mkd = marked(txt);
+          
             console.log("mkd",mkd)
-            block.textContent = mkd
+            block.innerHTML = mkd
+            $(block).filter("pre code").contents().unwrap();
+
           });
         });
     </script>

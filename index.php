@@ -150,8 +150,8 @@ s.setAttribute('data-timestamp', +new Date());
 
           });
 
+          $('.myBody pre code').contents().unwrap()
           $('.myBody pre').contents().unwrap()
-
         });
     </script>
   </body>

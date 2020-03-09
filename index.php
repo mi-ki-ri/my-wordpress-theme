@@ -54,11 +54,11 @@
                             <?php the_title(); ?>
                           </a>
                         </h3>
-                        <pre class="body myBody Markdown">
+                        <main class="body myBody Markdown markdown-body">
                           
                             <?php the_content(); ?>
                           
-                        </pre>
+                        </main>
                         <p class="text-right">
                           <?php the_date(); ?>
                         </p>

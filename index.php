@@ -12,8 +12,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+    
       <link rel="stylesheet" href="<?php echo bloginfo('url') ?>/wp-content/themes/my-wordpress-theme/style.css" />
       <link rel="stylesheet" href="<?php echo bloginfo('url') ?>/wp-content/themes/my-wordpress-theme/github-markdown.css" />
    
@@ -142,8 +141,10 @@ s.setAttribute('data-timestamp', +new Date());
           })
           document.querySelectorAll('.myBody').forEach((block) => {
             let txt = block.textContent
-            block.innerHTML =
-              marked(txt);
+            console.log("txt",txt)
+            mkd = marked(txt);
+            console.log("mkd",mkd)
+            block.textContent = mkd
           });
         });
     </script>

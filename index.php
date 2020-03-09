@@ -146,7 +146,7 @@ s.setAttribute('data-timestamp', +new Date());
           
             console.log("mkd",mkd)
             block.innerHTML = mkd
-            console.log( $(block).filter("pre code").unwrap() )
+            $(block).filter("pre code").unwrap()
 
           });
         });

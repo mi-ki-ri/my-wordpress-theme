@@ -53,9 +53,9 @@
                           </a>
                         </h3>
                         <pre class="body myBody Markdown">
-                          <code class="Markdown">
+                          
                             <?php the_content(); ?>
-                          </code>
+                          
                         </pre>
                         <p class="text-right">
                           <?php the_date(); ?>
@@ -130,11 +130,14 @@ s.setAttribute('data-timestamp', +new Date());
       crossorigin="anonymous"
     ></script>
  
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+ 
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           document.querySelectorAll('.myBody').forEach((block) => {
-            hljs.highlightBlock(block);
+            let txt = block.innerHTML
+            block.innerHTML =
+              marked(txt);
           });
         });
     </script>

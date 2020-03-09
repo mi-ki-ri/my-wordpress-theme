@@ -15,6 +15,8 @@
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
     <link rel="stylesheet" href="<?php echo bloginfo('url') ?>/wp-content/themes/my-wordpress-theme/style.css" />
+    <link href="https://kevinburke.bitbucket.io/markdowncss/markdown.css" rel="stylesheet"></link>
+
     <?php wp_head(); ?>
 
   </head>
@@ -135,7 +137,7 @@ s.setAttribute('data-timestamp', +new Date());
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           document.querySelectorAll('.myBody').forEach((block) => {
-            let txt = block.innerHTML
+            let txt = "\n" + block.innerHTML
             block.innerHTML =
               marked(txt);
           });

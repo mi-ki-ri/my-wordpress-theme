@@ -137,7 +137,7 @@ s.setAttribute('data-timestamp', +new Date());
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           document.querySelectorAll('.myBody').forEach((block) => {
-            let txt = "\n" + block.innerHTML
+            let txt = block.textContent
             block.innerHTML =
               marked(txt);
           });

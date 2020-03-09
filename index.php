@@ -142,14 +142,16 @@ s.setAttribute('data-timestamp', +new Date());
           document.querySelectorAll('.myBody').forEach((block) => {
             let txt = block.textContent
             console.log("txt",txt)
-            mkd = marked(txt);
+            let mkd = marked(txt);
           
             console.log("mkd",mkd)
             block.innerHTML = mkd
 
             console.log("block1",block)
 
-            $(block).filter("pre").contents().unwrap()
+            let pre = $(block).filter("pre")
+
+            console.log("pre", pre)
 
             console.log("block2",block)
 

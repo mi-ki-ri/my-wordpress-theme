@@ -149,7 +149,7 @@ s.setAttribute('data-timestamp', +new Date());
 
             console.log("block1",block)
 
-            $(block).filter("pre").unwrap()
+            $(block).filter("pre").contents().unwrap()
 
             console.log("block2",block)
 

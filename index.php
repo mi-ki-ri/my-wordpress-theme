@@ -147,16 +147,11 @@ s.setAttribute('data-timestamp', +new Date());
             console.log("mkd",mkd)
             block.innerHTML = mkd
 
-            console.log("block1",block)
-
-            let pre = $(block).filter("pre")
-
-            console.log("pre", pre)
-
-            console.log("block2",block)
-
 
           });
+
+          $('.myBody pre').unwrap()
+
         });
     </script>
   </body>
